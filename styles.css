@@ -1,0 +1,131 @@
+:root {
+    --primary-color: #007bff;
+    --header-bg: #4a4e52;
+    --white: #ffffff;
+    --light-bg: #f8f9fa;
+}
+
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-bg);
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* CV Container */
+.cv-container {
+    max-width: 900px;
+    background: var(--white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Header Section */
+.cv-header {
+    width: 100%;
+    text-align: center;
+    padding: 30px 20px;
+    background: var(--header-bg);
+    color: var(--white);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.cv-header .profile-img {
+    width: 150px;
+    height: auto;
+    border: 2px solid var(--white);
+    border-radius: 8px;
+    margin-bottom: 2px;
+}
+
+/* Flexbox for better spacing */
+.profile-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Profile Details */
+.profile-details h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.profile-details p {
+    font-size: 16px;
+    font-style: italic;
+    color: var(--white);
+    margin: 0;
+    padding-top: 0.5rem;
+}
+
+/* Contact & Skills Section */
+.contact-section {
+    border-bottom-left-radius: 8px;
+    padding-left: 20px;
+    background-color: #6d6f71c9;
+}
+
+.contact-section h4 {
+    color: black;
+    font-weight: bold;
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #343a40;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Skills List */
+.skills-list li {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.skills-list li i {
+    color: var(--primary-color);
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* Job Experience */
+.job {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    border-left: 3px solid var(--primary-color);
+}
+
+.job h5 {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.job::before {
+    content: "";
+    position: absolute;
+    left: -9px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background: var(--primary-color);
+    border-radius: 50%;
+}
